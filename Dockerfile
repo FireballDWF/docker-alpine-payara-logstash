@@ -16,3 +16,4 @@ RUN wget -P $ENDORSED http://central.maven.org/maven2/biz/paluch/logging/logstas
 # TODO: Verify keys per http://logging.paluch.biz/download.html
 RUN wget -P $ENDORSED http://central.maven.org/maven2/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar
 COPY logging.properties $GLASSFISH_INSTALL_DIR/domains/$APPDOMAIN/config/
+COPY logging.properties $GLASSFISH_INSTALL_DIR/domains/$APPDOMAIN/config/default-logging.properties
